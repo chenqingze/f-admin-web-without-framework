@@ -1,4 +1,4 @@
-import { css, html, LitElement } from 'lit';
+import { LitElement, html, css } from 'lit';
 import { property } from 'lit/decorators.js';
 
 const logo = new URL('../../assets/open-wc-logo.svg', import.meta.url).href;
@@ -18,7 +18,7 @@ export class App extends LitElement {
       max-width: 960px;
       margin: 0 auto;
       text-align: center;
-      background-color: var(--app-shell-background-color);
+      background-color: var(--app-root-background-color);
     }
 
     main {
@@ -52,16 +52,17 @@ export class App extends LitElement {
   render() {
     return html`
       <main>
-        <div class="logo"><img alt="open-wc logo" src="${logo}" /></div>
+        <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
         <h1>${this.title}</h1>
 
-        <p>Edit <code>src/AppShell.ts</code> and save to reload.</p>
+        <p>Edit <code>src/AppRoot.ts</code> and save to reload.</p>
         <a
           class="app-link"
           href="https://open-wc.org/guides/developing-components/code-examples"
           target="_blank"
           rel="noopener noreferrer"
         >
+          Code examples
         </a>
         <slot></slot>
       </main>
@@ -78,5 +79,4 @@ export class App extends LitElement {
     `;
   }
 }
-
-customElements.define('app-shell', App);
+customElements.define('app-root', App);

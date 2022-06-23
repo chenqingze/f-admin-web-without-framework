@@ -1,28 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Put your description here.">
-  <base href="/">
-
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, viewport-fit=cover' />
+  <meta name='Description' content='Put your description here.'>
+  <base href='/'>
+  <link rel='stylesheet' href='node_modules/@shoelace-style/shoelace/dist/themes/light.css' />
   <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background-color: #ededed;
-    }
+      html,
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+          background-color: #ededed;
+      }
   </style>
   <title>app-root</title>
 </head>
 
 <body>
-  <app-root></app-root>
-
-  <script type="module" src="./out-tsc/src/app-root.js"></script>
+<div id='outlet'></div>
+<script type='module' src='./out-tsc/src/index.js'></script>
 </body>
 
 </html>

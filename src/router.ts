@@ -3,7 +3,7 @@ import { Route, Router } from '@vaadin/router';
 export const routes: Route[] = [
   {
     path: '',
-    component: 'app-shell',
+    component: 'app-root',
     children: [
       {
         path: '',

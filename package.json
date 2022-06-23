@@ -15,6 +15,8 @@
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\""
   },
   "dependencies": {
+    "@shoelace-style/shoelace": "^2.0.0-beta.76",
+    "@vaadin/router": "^1.7.4",
     "lit": "^2.0.2"
   },
   "devDependencies": {
